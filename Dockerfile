@@ -5,7 +5,7 @@ FROM openjdk:11
 WORKDIR /app
 
 # Copy the JAR file from your local machine into the container
-COPY /opt/jenkins/workspace/employe/target/ems-0.0.1-SNAPSHOT.jar /app/
+COPY target/ems-0.0.1-SNAPSHOT.jar /app/
 
 # Define the command to run your JAR file
 CMD ["java", "-jar", "ems-0.0.1-SNAPSHOT.jar"]
